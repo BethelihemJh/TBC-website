@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transformative Business Consultants</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #1c2c47;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-family: 'Dancing Script', cursive;
+            color: white;
+            margin-left: 20px;
+        }
+
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav {
+            background-color: #1c2c47;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            padding-top: 20px;
+            z-index: 100;
+        }
+
+        nav a {
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2a4a73;
+            border-radius: 5px;
+        }
+
+        .container {
+            margin-left: 270px;
+            padding: 20px;
+        }
+
+        section {
+            display: none;
+            padding: 40px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav {
+                width: 200px;
+                padding-top: 15px;
+            }
+
+            nav a {
+                font-size: 16px;
+                padding: 10px;
+            }
+
+            .container {
+                margin-left: 220px;
+            }
+
+            section h2 {
+                font-size: 28px;
+            }
+
+            section p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            nav a {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            section h2 {
+                font-size: 24px;
+            }
+
+            .container {
+                margin-left: 0;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="tbc.png" alt="TBC Logo" class="profile-img">
+        <h1>Transformative Business Consultants</h1>
+    </header>
+
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('home')"><i class="fas fa-home"></i> Home</a>
+        <a href="javascript:void(0)" onclick="showSection('profile')"><i class="fas fa-clipboard-list"></i> Profile</a>
+        <a href="javascript:void(0)" onclick="showSection('services')"><i class="fas fa-briefcase"></i> Services</a>
+        <a href="javascript:void(0)" onclick="showSection('team')"><i class="fas fa-users"></i> Team</a>
+        <a href="javascript:void(0)" onclick="showSection('partners')"><i class="fas fa-handshake"></i> Partners</a>
+        <a href="javascript:void(0)" onclick="showSection('clients')"><i class="fas fa-user-friends"></i> Clients</a>
+        <a href="javascript:void(0)" onclick="showSection('contact')"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="active">
+            <h2>Welcome</h2>
+            <p>Welcome to Transformative Business Consultants (TBC), a consultancy firm dedicated to providing innovative services to enhance your business success and societal impact.</p>
+        </section>
+
+        <section id="profile">
+            <h2>Company Profile</h2>
+            <p><strong>Background:</strong> Transformative Business Consultants (TBC) has been established since 2020. TBC is a consultancy firm established by experts with expansive experience in designing Organizational Structures for Government and Private Companies, conducting Feasibility Studies, managing Projects, and preparing specifications, etc.</p>
+            <p><strong>Mission:</strong> To be the best customer’s choice in providing Quality consultancy Services.</p>
+            <p><strong>Vision:</strong> To provide innovative Consultancy Services to Customers, enhancing profitability and growth of TBC, provide development opportunities to employees and bring a positive impact on society.</p>
+            <p><strong>Core Values:</strong></p>
+            <ul>
+                <li>Customer orientation: Our primary responsibility is to satisfy our customers...</li>
+                <li>Investing in people: We would be investing in our people...</li>
+                <li>Integrity: The employees and management of the company...</li>
+                <li>Transparency: We promote open, honest, and straightforward communication...</li>
+                <li>Team work and empowerment: We uphold the value of working together...</li>
+                <li>Learning organization: We are open to accept new ideas...</li>
+            </ul>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Feasibility Studies</li>
+                <li>Project Management</li>
+                <li>Contract Administration</li>
+                <li>Preparing Tender Documents</li>
+                <li>Preparing Contract Documents</li>
+                <li>Preparing Specifications (plant, machine, equipment, etc)</li>
+                <li>Implementation & Training of systems (ISO, Kaizen, 5S, etc)</li>
+                <li>Training on (project management, production, marketing, etc)</li>
+                <li>Inspection for (plant, machine, equipment, etc) locally and abroad</li>
+                <li>Design (plant, machine, equipment, Organizational Structure, etc)</li>
+                <li>Asset Valuation</li>
+                <li>Supporting suppliers exporting Products & Services to Ethiopia</li>
+            </ul>
+        </section>
+
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <ul>
+                <li>Habte Hadish – General Manager</li>
+                <li>Kidane Hailu – D/General Manager</li>
+                <li>Tsegay Asefa – Management Member</li>
+                <li>Teame G/Tsadik – Management Member</li>
+                <li>Mekonnen Kebede Abreha – ICT Manager</li>
+            </ul>
+        </section>
+
+        <section id="partners">
+            <h2>Our Partners</h2>
+            <ul>
+                <li>Federal Democratic Republic of Ethiopia (FDRE) Industrial Parks Development Corporation, Industrial Projects Service (IPS)</li>
+                <li>Nexus Investment Solution Pvt. Ltd</li>
+                <li>Credible Business and Investment Consultancy (CBIS)</li>
+            </ul>
+        </section>
+
+        <section id="clients">
+            <h2>Our Clients</h2>
+            <ul>
+                <li>Messebo Cement Factory Plc</li>
+                <li>PINNACLE GROUP</li>
+                <li>Almeda Textile Factory Plc</li>
+                <li>Sheba Leather Industry Plc</li>
+                <li>WALA International Trading Plc</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email us for consulting issues at: <a href="mailto:hidadaregit@gmail.com">hidadaregit@gmail.com</a></p>
+            <p>For website inquiries, email: <a href="mailto:bethelihemkjh@gmail.com">bethelihemkjh@gmail.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Transformative Business Consultants. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            showSection('home');
+        });
+    </script>
+
+</body>
+</html>
